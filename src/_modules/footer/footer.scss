@@ -1,6 +1,5 @@
 // footer styles
 .footer {
-    background: $grey;
     color: white;
     padding: 50px 0;
 
@@ -16,7 +15,6 @@
         font-stretch: normal;
         line-height: normal;
         letter-spacing: 2.6px;
-        color: var(--cloudy-blue);
         text-transform: uppercase;
         padding: 20px 0;
     }
@@ -61,7 +59,6 @@
             font-stretch: normal;
             line-height: 1.43;
             letter-spacing: normal;
-            color: var(--white);
           
             & + p {
               margin-top: 10px

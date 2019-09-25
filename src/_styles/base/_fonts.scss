@@ -1,71 +1,57 @@
-$sitefont: 'Meta Offc', 'Lato', sans-serif;
 $fwThin: 300;
 $fwRegular: 400;
 $fwBold: 700;
 
 @font-face {
-    font-family: 'Meta Offc';
-    font-display: swap;
-    src: url('../../fonts/MetaOffc-Norm.eot');
-    src: url('../../fonts/MetaOffc-Norm.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/MetaOffc-Norm.woff') format('woff'),
-        url('../../fonts/MetaOffc-Norm.ttf') format('truetype');
+    font-family: 'GothamHTF';
+    src: url('../../fonts/gothamhtf_light-webfont.woff2') format('woff2'),
+         url('../../fonts/gothamhtf_light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'GothamHTF';
+    src: url('../../fonts/gothamhtf_medium-webfont.woff2') format('woff2'),
+         url('../../fonts/gothamhtf_medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamHTF';
+    src: url('../../fonts/gothamhtf_mediumcondensed-webfont.woff2') format('woff2'),
+         url('../../fonts/gothamhtf_mediumcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamHTF';
+    src: url('../../fonts/gothamhtf-black-webfont.woff2') format('woff2'),
+         url('../../fonts/gothamhtf-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamHTF';
+    src: url('../../fonts/gothamhtf-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/gothamhtf-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamHTF';
+    src: url('../../fonts/gothamhtf-book-webfont.woff2') format('woff2'),
+         url('../../fonts/gothamhtf-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Meta Offc';
-    font-display: swap;
-    src: url('../../fonts/MetaOffc-Black.eot');
-    src: url('../../fonts/MetaOffc-Black.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/MetaOffc-Black.woff') format('woff'),
-        url('../../fonts/MetaOffc-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Meta Offc';
-    font-display: swap;
-    src: url('../../fonts/MetaOffc-Thin.eot');
-    src: url('../../fonts/MetaOffc-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/MetaOffc-Thin.woff') format('woff'),
-        url('../../fonts/MetaOffc-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Meta Offc';
-    font-display: swap;
-    src: url('../../fonts/MetaOffc-Bold.eot');
-    src: url('../../fonts/MetaOffc-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/MetaOffc-Bold.woff') format('woff'),
-        url('../../fonts/MetaOffc-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Meta Offc';
-    font-display: swap;
-    src: url('../../fonts/MetaOffc-Medi.eot');
-    src: url('../../fonts/MetaOffc-Medi.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/MetaOffc-Medi.woff') format('woff'),
-        url('../../fonts/MetaOffc-Medi.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Meta Offc Book';
-    font-display: swap;
-    src: url('../../fonts/MetaOffc-Book.eot');
-    src: url('../../fonts/MetaOffc-Book.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/MetaOffc-Book.woff') format('woff'),
-        url('../../fonts/MetaOffc-Book.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-

@@ -12,12 +12,11 @@
   <ul class="navigation__list">
   {% for item in site.data.navigation.pages %}
     <li class="navigation__list-item">
-      {% if loop.first %}
-      <a class="navigation__item active" href="{{baseUrl}}{{item.url}}" title="{{item.page}}">{{item.page}}</a>
-      {% else %}
-      <a class="navigation__item" href="{{baseUrl}}{{item.url}}" title="{{item.page}}">{{item.page}}</a>
-      {% endif %}
+      <a class="navigation__item navigation__item--{{item.page}}" href="{{baseUrl}}{{item.url}}" title="{{item.page}}">{{item.page}}</a>
     </li>
   {% endfor %}
+  <li class="navigation__list-item">
+    <a href="#" class="navigation__item button">Get the app</a>
+  </li>
   </ul>
 </navigation>

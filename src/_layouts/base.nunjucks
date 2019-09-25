@@ -28,11 +28,14 @@
     {% include "_modules/header/header.nunjucks" %}
 
     {% macro hero(page='', title='') %}
-    <div class="hero wrapper hero-{{page}}">
-        <h1 class="hero__title">{{title}}</h1>
-    </div>
-    <div class="wrapper">
-      <p class="hero-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni optio explicabo illo, iure, eius beatae minus temporibus odio incidunt obcaecati omnis maiores, alias ab autem similique vitae dignissimos esse. <a href="#">Learn more</a></p>
+    <div class="hero hero-{{page}}">
+      <div class="wrapper">
+        <div class="hero__content">
+          <h1 class="hero__title">Yes, it's a code word</h1>
+          <p class="hero__description">We want you to tell us about your experience with broccoli.  By signing up, you can get cash rewards for answering surveys about broccoli, and sharing your experiences, ideas and suggestions.</p>
+          <p><a href="#" class="button">Get the app</a></p>
+        </div>
+      </div>
     </div>
     {% endmacro %}
 

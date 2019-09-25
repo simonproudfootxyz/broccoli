@@ -1,24 +1,12 @@
 {
     "pages": [
         {
-            "page": "About",
-            "url": "/about"
+            "page": "FAQ",
+            "url": "/frequently-asked-questions"
         },
         {
-            "page": "Parents",
-            "url": "/parents"
-        },
-        {
-            "page": "Community",
-            "url": "/community"
-        },
-        {
-            "page": "Primary Care",
-            "url": "/primary-care"
-        },
-        {
-            "page": "Research",
-            "url": "/research"
+            "page": "Support",
+            "url": "/support"
         }
     ]
 }

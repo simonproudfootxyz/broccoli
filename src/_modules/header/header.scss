@@ -1,13 +1,19 @@
 // header styles
 .header {
-    padding-top: 30px;
+    padding: 15px 0;
+    background: $very-dark-green;
+
+    body.layout-home & {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
     
     .header__home {
-        max-width: 200px;
-
-        @media only screen and (min-width: 980px) {
-            max-width: 300px;
-        }
+        max-width: 150px;
     }
 
     .mobile-nav-trigger__container {
@@ -22,8 +28,6 @@
             padding: 15px 0;
             display: inline-block;
             font-size: 18px;
-            font-weight: $fwBold;
-            color: var(--cool-grey);
 
             &:hover,
             &:focus {
@@ -55,7 +59,6 @@
             position: static;
             background: none;
             width: auto;
-            padding: 25px 0 0 0;
         }
 
         .mobile-nav-trigger {

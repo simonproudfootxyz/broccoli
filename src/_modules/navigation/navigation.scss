@@ -18,17 +18,20 @@
 
     .navigation__item {
         display: inline-block;
-        color: $steel;
-        font-weight: $fwThin;
-        font-size: 34px;
-        transition: all 0.2s;
+        font-family: GothamHTF;
+        font-weight: 500;
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $off-white;
+        text-transform: uppercase;
         position: relative;
-        line-height: 1.7;
 
-        @media only screen and (min-width: 980px) {
-            font-weight: $fwBold;
-            font-size: 20px;
-            padding: 10px 20px;
+        @media only screen and (min-width: 786px) {
+            padding: 25px 30px;
         }
 
         &::after {
@@ -38,9 +41,9 @@
                 display: block;
                 position: absolute;
                 left: 0;
-                bottom: 0;
+                bottom: -18px;
                 width: 100%;
-                height: 5px;
+                height: 3px;
                 background: transparent;
             }
         }
@@ -49,16 +52,35 @@
         &:hover,
         &:focus {
             text-decoration: none;
-            color: $red;
         }
 
-        &.active {
+        &.button {
+            border: 3px solid $tea-two;
+            padding: 25px 30px;
+            font-weight: 500;
+            font-size: 16px;
 
-            &::after {
+            body:not(.layout-home) & {
+                border: 3px solid $sandy;
+            }
+        }
 
-                @media only screen and (min-width: 980px) {
-                    opacity: 0.1;
-                    background-color: var(--faded-red);
+        &.navigation__item--FAQ {
+
+            body.page--frequently-asked-questions & {
+
+                &::after {
+                    background: $sandy;
+                }
+            }
+        }
+
+        &.navigation__item--Support {
+
+            body.page--support & {
+
+                &::after {
+                    background: $sandy;
                 }
             }
         }
