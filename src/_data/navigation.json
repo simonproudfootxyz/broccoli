@@ -1,0 +1,24 @@
+{
+    "pages": [
+        {
+            "page": "About",
+            "url": "/about"
+        },
+        {
+            "page": "Parents",
+            "url": "/parents"
+        },
+        {
+            "page": "Community",
+            "url": "/community"
+        },
+        {
+            "page": "Primary Care",
+            "url": "/primary-care"
+        },
+        {
+            "page": "Research",
+            "url": "/research"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% macro navCallout(headline='', copy='', image='') %}
+<div class="nav-callout">
+  <img class="nav-callout__image" src="./images/{{image}}" alt="{{headline}}">
+  <h3 class="nav-callout__title">{{headline}}</h3>
+  <p class="nav-callout__description">{{copy}}. <a class="nav-callout__link" href="#">Learn more</a></p>
+</div>
+{% endmacro %}
+
+{% macro questionnaire(classes='', copy='', image='') %}
+<div class="questionnaire__card {{classes}}">
+  <img class="card__image" src="./images/{{image}}">
+  <p class="card__description">{{copy}}.</p>
+  <p class="card__description"><a class="card__link" href="#">Get Started</a></p>
+</div>
+{% endmacro %}
+
+{% block config %}
+  {# Correct base url pathing for this page #}
+  {% set currentPage = 'home' %}
+{% endblock %}
+
+{% block hero %}
+  {{hero(page='home', title='Welcome to NutriSTEP<sup>&reg;</sup>')}}
+{% endblock %}
+
+{% block content %}
+  <section class="home-nav-callouts content-wrapper">
+    <div class="wrapper">
+      <h2 class="nav-callouts__title">
+        <img src="./images/bear-icon.png" alt="">
+        <span class="title-text">What can this bear do for you?</span>
+      </h2>
+      {{navCallout(headline='For Parents', copy='Complete online nutrition questionnaires and get immediate feedback', image='for-parents.jpg')}}
+      {{navCallout(headline='For Community Providers', copy='Organize community agency activities for nutrition risk screening', image='for-community-providers.jpg')}}
+      {{navCallout(headline='For Primary Care Providers', copy='Supporting your clients with young children to identify potential nutrition risks with screening questionnaires', image='for-primary-care-providers.jpg')}}
+    </div>
+  </section>
+
+  <section class="questionnaires">
+    <div class="wrapper">
+      <h3 class="questionnaires__title">Free access to questionnaires.</h3>
+      <p class="questionnaires__description">Please select the questionnaire that best fits you.</p>
+      {{questionnaire(classes='', copy='Learn how to acquire a free license for the paper-based NutriSTEP<sup>&reg;</sup> questionnaires that you can use in your practice', image='nutri-e-step-logo.png')}}
+      {{questionnaire(classes='nutri-estep', copy='Access toddler and preschooler questionnaires online at www.nutritionscreen.ca', image='nutri-step-logo.png')}}
+    </div>
+  </section>
+{% endblock %}

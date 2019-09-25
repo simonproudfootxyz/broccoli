@@ -1,0 +1,20 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="{{_class}}">
+  <p>This is an example paragraph for the header module</p>
+</div>
+{% endmacro %}
+<header class="header">
+  <div class="wrapper">
+    <a class="header__home" href="{{baseUrl}}">
+      <img class="header__logo" src="{{baseUrl}}/images/nutri-step-logo@3x.png" alt="Nutristep">
+    </a>
+    <div class="mobile-nav-trigger__container">
+      <a class="mobile-nav-trigger" href="#">Menu</a>
+    </div>
+    {% include "../navigation/navigation.nunjucks" %}
+  </div>
+</header>

@@ -1,0 +1,52 @@
+{# Custom Configuration #}
+{% block config %}
+  {# Setup site's base URL to match the "baseUrl" key within `package.json` #}
+  {# Otherwise default to relative pathing #}
+  {% set baseUrl = config.baseUrl or '../' %}
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Sample</title>
+    <meta name="description" content="A new Yeogurt application"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{baseUrl}}styles/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    {% block stylesheets %}{% endblock %}
+
+  </head>
+  <body class="layout-content-page page--{{currentPage}}">
+    <!--[if lt IE 11]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </p>
+    <![endif]-->
+    {% include "_modules/header/header.nunjucks" %}
+
+    {% macro hero(page='', title='') %}
+    <div class="hero wrapper hero-{{page}}">
+        <h1 class="hero__title">{{title}}</h1>
+    </div>
+    {% endmacro %}
+
+    {% block hero %}{% endblock %}
+    <div class="wrapper content-wrapper">
+        <ul id="chapter-nav" class="chapter-nav">
+        </ul>
+        <section class="content-section">
+            <div class="page-content">
+              {% block content %}{% endblock %}
+            </div>
+            <a id="back-to-top" href="#">Back to Top</a>
+        </section>
+    </div>
+
+    {% include "_modules/footer/footer.nunjucks" %}
+    <script src="{{baseUrl}}scripts/main.js"></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>
