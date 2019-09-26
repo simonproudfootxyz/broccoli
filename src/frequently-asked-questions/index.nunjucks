@@ -2,87 +2,38 @@
 
 {% block config %}
   {# Correct base url pathing for this page #}
+  {% set pageTitle = 'Frequently Asked Questions' %}
   {% set currentPage = 'frequently-asked-questions' %}
   {% set baseUrl = '../' %}
 {% endblock %}
 
-{% block hero %}
-  {{hero(page='parents', title='Frequently Asked Questions')}}
+{% block content %}
+<div id="accordion">
+  <h3>What is this research being used for?</h3>
+  <div>
+    <p>To give a voice to consumers that is loud enough to be heard. So that you can reach the companies that produce it, the researchers that study it, and the doctors that want to prescribe it.  So that their information is accurate, and honest.</p>
+  </div>
+  <h3>What information will be shared?</h3>
+  <div><p>We will never use your name, or anything else that can identify you.   We will never ask forbanking or credit card information.  If you are interested in the storage and usage of data as it pertains to trials and the various laws surrounding medical and healthcare industries, you can read more here.</p></div>
+  <h3>How will I be paid?</h3>
+  <div>
+    <p>We use a reward-based point system.  Each survey or trial has a point value. <br>
+    Step 1. Complete that survey, and receive the point value of that survey. <br>
+    Step 2. Complete more surveys and trials to add more points. <br>
+    Step 3. Profit. Cash out whenever you like.</p>
+  </div>
+  <h3>Is my data safe?</h3>
+  <div><p>At every step, we will be open and forthcoming with your data usage.  The currency and payout structures are all protected using advanced cryptography and blockchain enabled, so you can be 100% confident in the safety of your data. No data will be shared with third parties without your permission.  If you have further questions regarding the storage and usage of data as it pertains to trials and the various laws surrounding medical and healthcare industries, you can read more <a href="#">here</a>.</p></div>
+</div>
 {% endblock %}
 
-{% block content %}
-<h2 class="content-heading">Content heading 1</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<ul>
-  <li>Lorem ipsum dolor, sit amet consectetur eveniet odio aspernatur perferendis consectetur voluptatem, aut voluptate perspiciatis!</li>
-  <li>adipisicing elit. Optio fuga expedita ut accusantium at unde, ea fugiat quidem laboriosam explicabo quia, </li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum <a href="">dolor sit amet consectetur adipisicing</a> elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-</ul>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis commodi eaque magni ipsum nobis debitis totam culpa quis! Magni molestias, dolorum repellendus debitis suscipit esse accusantium! Enim, quas voluptates!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias similique voluptatem repudiandae, veritatis unde eveniet consequatur quo soluta, minima voluptatum ducimus temporibus magni quibusdam sunt! Saepe doloribus tempora officia autem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium eius beatae nisi quod impedit molestias laudantium neque dolor tenetur numquam, saepe nostrum ullam, porro illo vitae, error <a href="">optio facilis</a>.</p>
+{% block scripts %}
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    $("#accordion").accordion({
+      collapsible: true,
 
-<h2 class="content-heading">Content heading 2</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<ul>
-  <li>Lorem ipsum dolor, sit amet consectetur eveniet odio aspernatur perferendis consectetur voluptatem, aut voluptate perspiciatis!</li>
-  <li>adipisicing elit. Optio fuga expedita ut accusantium at unde, ea fugiat quidem laboriosam explicabo quia, </li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum <a href="">dolor sit amet consectetur adipisicing</a> elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-</ul>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis commodi eaque magni ipsum nobis debitis totam culpa quis! Magni molestias, dolorum repellendus debitis suscipit esse accusantium! Enim, quas voluptates!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias similique voluptatem repudiandae, veritatis unde eveniet consequatur quo soluta, minima voluptatum ducimus temporibus magni quibusdam sunt! Saepe doloribus tempora officia autem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium eius beatae nisi quod impedit molestias laudantium neque dolor tenetur numquam, saepe nostrum ullam, porro illo vitae, error <a href="">optio facilis</a>.</p>
-
-<h2 class="content-heading">Content heading 3</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<ul>
-  <li>Lorem ipsum dolor, sit amet consectetur eveniet odio aspernatur perferendis consectetur voluptatem, aut voluptate perspiciatis!</li>
-  <li>adipisicing elit. Optio fuga expedita ut accusantium at unde, ea fugiat quidem laboriosam explicabo quia, </li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum <a href="">dolor sit amet consectetur adipisicing</a> elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-</ul>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis commodi eaque magni ipsum nobis debitis totam culpa quis! Magni molestias, dolorum repellendus debitis suscipit esse accusantium! Enim, quas voluptates!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias similique voluptatem repudiandae, veritatis unde eveniet consequatur quo soluta, minima voluptatum ducimus temporibus magni quibusdam sunt! Saepe doloribus tempora officia autem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium eius beatae nisi quod impedit molestias laudantium neque dolor tenetur numquam, saepe nostrum ullam, porro illo vitae, error <a href="">optio facilis</a>.</p>
-
-<h2 class="content-heading">Content heading 4</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<ul>
-  <li>Lorem ipsum dolor, sit amet consectetur eveniet odio aspernatur perferendis consectetur voluptatem, aut voluptate perspiciatis!</li>
-  <li>adipisicing elit. Optio fuga expedita ut accusantium at unde, ea fugiat quidem laboriosam explicabo quia, </li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum <a href="">dolor sit amet consectetur adipisicing</a> elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-</ul>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis commodi eaque magni ipsum nobis debitis totam culpa quis! Magni molestias, dolorum repellendus debitis suscipit esse accusantium! Enim, quas voluptates!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias similique voluptatem repudiandae, veritatis unde eveniet consequatur quo soluta, minima voluptatum ducimus temporibus magni quibusdam sunt! Saepe doloribus tempora officia autem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium eius beatae nisi quod impedit molestias laudantium neque dolor tenetur numquam, saepe nostrum ullam, porro illo vitae, error <a href="">optio facilis</a>.</p>
-
-<h2 class="content-heading">Content heading 5</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem, corporis facilis sit pariatur, nam officia sapiente commodi consequatur iusto deserunt. Asperiores soluta assumenda numquam excepturi accusantium, sed voluptas nobis.</p>
-<ul>
-  <li>Lorem ipsum dolor, sit amet consectetur eveniet odio aspernatur perferendis consectetur voluptatem, aut voluptate perspiciatis!</li>
-  <li>adipisicing elit. Optio fuga expedita ut accusantium at unde, ea fugiat quidem laboriosam explicabo quia, </li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum <a href="">dolor sit amet consectetur adipisicing</a> elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus ad distinctio perferendis. Dolore eius, fugiat voluptatum ratione dicta perspiciatis sed assumenda minus quisquam magnam, dignissimos voluptas excepturi blanditiis voluptate.</li>
-</ul>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis commodi eaque magni ipsum nobis debitis totam culpa quis! Magni molestias, dolorum repellendus debitis suscipit esse accusantium! Enim, quas voluptates!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias similique voluptatem repudiandae, veritatis unde eveniet consequatur quo soluta, minima voluptatum ducimus temporibus magni quibusdam sunt! Saepe doloribus tempora officia autem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium eius beatae nisi quod impedit molestias laudantium neque dolor tenetur numquam, saepe nostrum ullam, porro illo vitae, error <a href="">optio facilis</a>.</p>
+    });
+  })
+</script>
 {% endblock %}

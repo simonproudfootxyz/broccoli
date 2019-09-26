@@ -9,27 +9,28 @@
 {% endmacro %}
 <footer class="footer">
   <div class="wrapper">
-    <p class="footer__company">Nutristep<sup>&reg;</sup></p>
+    <div class="footer__logo-container">
+      <a href="#">
+        <img class="footer__logo" src="{{baseUrl}}/images/icon__broccoli.png" alt="Broccoli">
+      </a>
+    </div>
     <ul class="footer-links footer-nav">
+      <li class="footer-nav__list-item">
+        <a href="{{baseUrl}}" class="footer-nav__item">Home</a>
+      </li>
     {% for item in site.data.navigation.pages %}
       <li class="footer-nav__list-item">
         <a class="footer-nav__item" href="{{baseUrl}}{{item.url}}" title="{{item.page}}">{{item.page}}</a>
       </li>
       {% endfor %}
     </ul>
-    <ul class="footer-links legal-nav">
-      <li class="legal-nav__list-item">
-        <a href="{{baseUrl}}/terms-of-use" class="legal-nav__item">Terms of Use</a>
-      </li>
-      <li class="legal-nav__list-item">
-        <a href="{{baseUrl}}/privacy-policy" class="legal-nav__item">Privacy Policy</a>
-        </li>
-    </ul>
-    <div class="footer-disclaimer">
-      <p>Copyright © 2018 <a href="#">Dietitians of Canada</a>. All rights reserved.</p>
-      <p>Preschool NutriSTEP® questionnaire is the copyright © of Public Health Sudbury & Districts, Janis Randall Simpson and Heather Keller. </p>
-      <p>Toddler NutriSTEP® questionnaire is the copyright © of Janis Randall Simpson, Lee Rysdale and Heather Keller. </p>
-      <p>The NutriSTEP® mark and Bear Logo are owned by Public Health Sudbury & Districts (Ontario).</p>
+    <div class="footer__app-callouts">
+      <a href="#" class="app-callout">
+        <img src="http://via.placeholder.com/115x40" alt="">
+      </a>
+      <a href="#" class="app-callout">
+        <img src="http://via.placeholder.com/115x40" alt="">
+      </a>
     </div>
   </div>
 </footer>

@@ -26,17 +26,7 @@
 {% endblock %}
 
 {% block content %}
-  <section class="home-nav-callouts content-wrapper">
-    <div class="wrapper">
-      <h2 class="nav-callouts__title">
-        <img src="./images/bear-icon.png" alt="">
-        <span class="title-text">What can this bear do for you?</span>
-      </h2>
-      {{navCallout(headline='For Parents', copy='Complete online nutrition questionnaires and get immediate feedback', image='for-parents.jpg')}}
-      {{navCallout(headline='For Community Providers', copy='Organize community agency activities for nutrition risk screening', image='for-community-providers.jpg')}}
-      {{navCallout(headline='For Primary Care Providers', copy='Supporting your clients with young children to identify potential nutrition risks with screening questionnaires', image='for-primary-care-providers.jpg')}}
-    </div>
-  </section>
+  
 
   <section class="questionnaires">
     <div class="wrapper">

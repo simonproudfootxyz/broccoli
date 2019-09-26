@@ -15,7 +15,11 @@
     <meta name="description" content="A new Yeogurt application"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="{{baseUrl}}styles/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/kif7ibz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     {% block stylesheets %}{% endblock %}
 
   </head>
@@ -26,23 +30,11 @@
     </p>
     <![endif]-->
     {% include "_modules/header/header.nunjucks" %}
-
-    {% macro hero(page='', title='') %}
-    <div class="hero wrapper hero-{{page}}">
-        <h1 class="hero__title">{{title}}</h1>
-    </div>
-    {% endmacro %}
-
-    {% block hero %}{% endblock %}
     <div class="wrapper content-wrapper">
-        <ul id="chapter-nav" class="chapter-nav">
-        </ul>
-        <section class="content-section">
-            <div class="page-content">
-              {% block content %}{% endblock %}
-            </div>
-            <a id="back-to-top" href="#">Back to Top</a>
-        </section>
+      <section class="content-section">
+        <h1 class="content__heading">{{pageTitle}}</h1>
+        {% block content %}{% endblock %}
+      </section>
     </div>
 
     {% include "_modules/footer/footer.nunjucks" %}

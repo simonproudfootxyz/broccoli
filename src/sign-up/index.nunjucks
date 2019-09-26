@@ -1,0 +1,13 @@
+{% extends '_layouts/content-page.nunjucks' %}
+
+{% block config %}
+  {# Correct base url pathing for this page #}
+  {% set pageTitle = 'Sign Up' %}
+  {% set currentPage = 'sign-up' %}
+  {% set baseUrl = '../' %}
+{% endblock %}
+
+{% block content %}
+<p>We encourage open, honest and accessible information about cannabis!  As cannabis enthusiasts , we want to work with you as valued and ethical partners in the cannabis lifestyle.  In exchange for your experiences, we offer rewards, including cash, and other great options!</p>
+<p>By signing up for our newsletter, providing stories, or using our app in exchange for cash and other rewards, you gain access to exciting offers in our cannabis community including events, surveys and clinical trials.</p>
+{% endblock %}
