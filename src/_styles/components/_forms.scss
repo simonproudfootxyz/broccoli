@@ -1,0 +1,42 @@
+form {
+    padding-top: 40px;
+
+    input,
+    textarea {
+        border: solid 1px $white;
+        background-color: #ffffff;
+        padding: 18px 24px;
+        font-family: ImperialURW-Med;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $very-dark-green-two;
+        margin-bottom: 32px;
+
+        ::-webkit-input-placeholder,
+        :-ms-input-placeholder,
+        ::placeholder {
+            color: red;
+        }
+    }
+
+    &.sign-up-form {
+
+        input:not([type="submit"]) {
+            width: calc(33% - 17px);
+            float: left;
+
+            &:nth-of-type(n + 2) {
+                margin-left: 30px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 140px;
+        }
+    }
+}
