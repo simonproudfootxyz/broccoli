@@ -27,6 +27,12 @@ a {
   }
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -37,7 +43,7 @@ a {
 .button {
   display: inline-block;
   padding: 25px 40px;
-  border: 3px solid $sandy;
+  border: 3px solid $tea;
   text-transform: uppercase;
   font-family: GothamHTF;
   font-size: 21px;
@@ -49,6 +55,14 @@ a {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+
+  &.button--sandy {
+    border: 3px solid $sandy
+  }
+
+  &.button--black-text {
+    color: black;
+  }
 
   &:hover,
   &:focus {
@@ -78,6 +92,14 @@ ol {
 
 p {
   margin: 0;
+  font-family: $serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  color: $very-dark-green-two;
 
   & + p {
     margin-top: 25px
@@ -101,17 +123,6 @@ p {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 70px;
-  }
-
-  p {
-    font-family: $serif;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.89;
-    letter-spacing: normal;
-    color: $very-dark-green-two;
   }
 
   ul {
@@ -185,6 +196,11 @@ p {
       font-weight: 500;
     }
   }
+}
+
+.home-wrapper {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .content-wrapper {

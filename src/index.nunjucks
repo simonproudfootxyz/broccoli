@@ -1,18 +1,20 @@
 {% extends '_layouts/base.nunjucks' %}
 
-{% macro navCallout(headline='', copy='', image='') %}
-<div class="nav-callout">
-  <img class="nav-callout__image" src="./images/{{image}}" alt="{{headline}}">
-  <h3 class="nav-callout__title">{{headline}}</h3>
-  <p class="nav-callout__description">{{copy}}. <a class="nav-callout__link" href="#">Learn more</a></p>
-</div>
-{% endmacro %}
-
-{% macro questionnaire(classes='', copy='', image='') %}
-<div class="questionnaire__card {{classes}}">
-  <img class="card__image" src="./images/{{image}}">
-  <p class="card__description">{{copy}}.</p>
-  <p class="card__description"><a class="card__link" href="#">Get Started</a></p>
+{% macro explanation(modifiers='', step='', heading='', copy='', image='', button='') %}
+<div class="explanation {{modifiers}} clearfix">
+  {% if (image) %}
+    <img class="explanation__image" src="./images/{{image}}">
+  {% else %}
+    <img class="explanation__image" src="http://via.placeholder.com/300x200">
+  {% endif %}  
+  <div class="explanation__content">
+    <p class="explanation__step">{{step}}</p>
+    <p class="explanation__heading">{{heading}}</p>
+    <p class="explanation__copy">{{copy}}</p>
+    {% if (button) %}
+      <p><a href="#" class="button button--black-text">{{button}}</a></p>
+    {% endif %}
+  </div>
 </div>
 {% endmacro %}
 
@@ -26,14 +28,30 @@
 {% endblock %}
 
 {% block content %}
-  
-
-  <section class="questionnaires">
-    <div class="wrapper">
-      <h3 class="questionnaires__title">Free access to questionnaires.</h3>
-      <p class="questionnaires__description">Please select the questionnaire that best fits you.</p>
-      {{questionnaire(classes='', copy='Learn how to acquire a free license for the paper-based NutriSTEP<sup>&reg;</sup> questionnaires that you can use in your practice', image='nutri-e-step-logo.png')}}
-      {{questionnaire(classes='nutri-estep', copy='Access toddler and preschooler questionnaires online at www.nutritionscreen.ca', image='nutri-step-logo.png')}}
-    </div>
+  <section class="explanations">
+    {{explanation(
+      image='image__mockup.png', 
+      modifiers='', 
+      step='About the app', 
+      heading='Try Broccoli, Get Paid', 
+      copy='That’s right, broccoli is green, and so is cash. You fill out surveys, get cash rewards.  No tricks, no gimmicks.  Your experience has value; we recognize and reward that.', 
+      button='Get the app'
+    )}}
+    {{explanation(
+      image='', 
+      modifiers='--right', 
+      step='How it works', 
+      heading='The Science of Broccoli', 
+      copy='Our studies consist of your experiences. From surveys to virtual clinical trials, we compensate you for your time and experience.  Whether you’re a weekend enthusiast, a lifestyle connoisseur, or just a casual user, we have surveys and trials available for you.  You can participate in as many, or as few, as you wish and get paid for any participation.', 
+      button=''
+    )}}
+    {{explanation(
+      image='image__cannabis.png', 
+      modifiers='', 
+      step='Our mission', 
+      heading='Steamed? No <br>Baked? Yes', 
+      copy='There is a vast cultural history that has flourished underground. The more knowledge we collect, the better we can educate others.  Our goal is to use the research gathered from our studies to better inform the healthcare community, and to give a voice to consumers.', 
+      button=''
+    )}}
   </section>
 {% endblock %}

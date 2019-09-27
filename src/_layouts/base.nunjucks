@@ -37,7 +37,7 @@
         <div class="hero__content">
           <h1 class="hero__title">Yes, it's a code word</h1>
           <p class="hero__description">We want you to tell us about your experience with broccoli.  By signing up, you can get cash rewards for answering surveys about broccoli, and sharing your experiences, ideas and suggestions.</p>
-          <p><a href="#" class="button">Get the app</a></p>
+          <p><a href="#" class="button button--sandy">Get the app</a></p>
         </div>
       </div>
     </div>
@@ -45,7 +45,9 @@
 
     {% block hero %}{% endblock %}
 
-    {% block content %}{% endblock %}
+    <div class="wrapper home-wrapper">
+      {% block content %}{% endblock %}
+    </div>
 
     {% include "_modules/footer/footer.nunjucks" %}
     <script src="{{baseUrl}}scripts/main.js"></script>
