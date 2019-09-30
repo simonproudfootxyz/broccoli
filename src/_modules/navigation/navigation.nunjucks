@@ -8,7 +8,9 @@
 </div>
 {% endmacro %}
 <navigation class="navigation">
-  <a href="#" class="mobile-nav-trigger">Close</a>
+  <a href="#" class="mobile-nav-trigger">
+    <i class="fa fa-times"></i>
+  </a>
   <ul class="navigation__list">
   {% for item in site.data.navigation.pages %}
     <li class="navigation__list-item">

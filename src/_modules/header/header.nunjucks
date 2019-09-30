@@ -13,7 +13,9 @@
       <img class="header__logo" src="{{baseUrl}}/images/logo--white.png" alt="Nutristep">
     </a>
     <div class="mobile-nav-trigger__container">
-      <a class="mobile-nav-trigger" href="#">Menu</a>
+      <a class="mobile-nav-trigger" href="#">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     {% include "../navigation/navigation.nunjucks" %}
   </div>

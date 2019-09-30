@@ -150,6 +150,7 @@ p {
 
 
 .hero {
+  padding: 125px 0;
 
   @media only screen and (min-width: 768px) {
     padding: 200px 0;
@@ -165,7 +166,7 @@ p {
   .hero__content {
 
     @media only screen and (min-width: 768px) {
-      width: 50%;
+      max-width: 450px;
     }
 
     p {
@@ -208,7 +209,7 @@ p {
 }
 
 .content-wrapper {
-  padding-top: 0;
+  padding-top: 50px;
   padding-bottom: 50px;
 
   @media only screen and (min-width: 768px) {

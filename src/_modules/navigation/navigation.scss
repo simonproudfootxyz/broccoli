@@ -1,17 +1,25 @@
 // navigation styles
 .navigation__list {
+    background: white;
     margin: 0;
-    padding-top: 100px;
     list-style-type: none;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: -1px;
+    padding: 20px;
 
-    @media only screen and (min-width: 980px) {
-        padding: 0;   
+    @media only screen and (min-width: 768px) {
+        padding: 0;
+        background: none;
+        width: auto;
+        margin-left: 0;
+        margin-top: 0;
     }
 }
 
 .navigation__list-item {
 
-    @media only screen and (min-width: 980px) {
+    @media only screen and (min-width: 768px) {
         display: inline-block;
     }
 }
@@ -25,18 +33,23 @@
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: center;
-        color: $off-white;
+        color: $very-dark-green;
         text-transform: uppercase;
         position: relative;
+        text-align: right;
+        width: 100%;
+        padding: 15px 0;
 
-        @media only screen and (min-width: 786px) {
+        @media only screen and (min-width: 768px) {
             padding: 25px 30px;
+            color: white;
+            width: auto;
+            text-align: center;
         }
 
         &::after {
 
-            @media only screen and (min-width: 980px) {
+            @media only screen and (min-width: 768px) {
                 content: '';
                 display: block;
                 position: absolute;
@@ -55,10 +68,16 @@
         }
 
         &.button {
+            color: $very-dark-green;
             border: 3px solid $tea-two;
             padding: 25px 30px;
             font-weight: 500;
             font-size: 16px;
+            width: auto;
+
+            @media only screen and (min-width: 768px) {
+                color: white;
+            }
 
             body:not(.layout-home) & {
                 border: 3px solid $sandy;
