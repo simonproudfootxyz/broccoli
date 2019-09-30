@@ -38,7 +38,7 @@
       button='Get the app'
     )}}
     {{explanation(
-      image='', 
+      image='image__mockup2.png', 
       modifiers='--right', 
       step='How it works', 
       heading='The Science of Broccoli', 
