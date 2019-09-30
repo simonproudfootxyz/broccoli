@@ -1,11 +1,16 @@
 // footer styles
 .footer {
     color: white;
-    padding: 70px 0;
+    padding: 25px 0;    
     background: $very-dark-green;
+
+    @media only screen and (min-width: 768px) {
+        padding: 70px 0;
+    }
 
     .wrapper {
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     a {
@@ -13,10 +18,13 @@
     }
 
     .footer__logo-container {
-        width: 25%;
 
         .footer__logo {
-            max-width: 48px;
+            max-width: 30px;
+
+            @media only screen and (min-width: 768px) {
+                max-width: 48px;
+            }
         }
     }
 
@@ -24,17 +32,18 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        width: 50%;
         text-align: center;
 
         .footer-nav__list-item {
-            display: inline-block;
+
+            @media only screen and (min-width: 768px) {
+                display: inline-block;
+            }
         }
 
         .footer-nav__item {
             display: inline-block;
             font-family: $montserrat;
-            font-size: 18px;
             font-weight: 500;
             font-style: normal;
             font-stretch: normal;
@@ -44,6 +53,11 @@
             color: $off-white-two;
             text-decoration: none;
             padding: 15px 30px;
+            font-size: 14px;
+
+            @media only screen and (min-width: 768px) {
+                font-size: 18px;
+            }
 
             &:hover,
             &:focus {
@@ -53,10 +67,15 @@
     }
 
     .footer__app-callouts {
-        width: 25%;
         text-align: right;
 
         .app-callout {
+            display: block;
+
+            @media only screen and (min-width: 768px) {
+                display: inline-block;
+            }
+
             & + .app-callout {
                 padding-left: 10px;
             }

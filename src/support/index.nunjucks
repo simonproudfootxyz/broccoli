@@ -10,10 +10,10 @@
 {% block content %}
 <p>We’re here to help.</p>
 <p>For any questions or issues please contact us directly.</p>
-<form action="" class="sign-up-form">
-  <input type="text" name="name" placeholder="Name">
-  <input type="email" name="email" placeholder="Email">
-  <input type="text" name="issue" placeholder="Issue">
+<form id="support-form" action="" class="support-form">
+  <input class="support-form__name" type="text" name="name" placeholder="Name">
+  <input class="support-form__email" type="email" name="email" placeholder="Email">
+  <input class="support-form__issue" type="text" name="issue" placeholder="Issue">
   <textarea name="details" id="" placeholder="Details"></textarea>
   <div class="text-right">
     <input class="button button--black-text" type="submit" value="Submit">

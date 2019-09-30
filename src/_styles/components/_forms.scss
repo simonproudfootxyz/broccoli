@@ -1,8 +1,12 @@
 form {
     padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     input,
-    textarea {
+    textarea,
+    select {
         border: solid 1px $white;
         background-color: #ffffff;
         padding: 18px 24px;
@@ -15,28 +19,77 @@ form {
         letter-spacing: normal;
         color: $very-dark-green-two;
         margin-bottom: 32px;
-
-        ::-webkit-input-placeholder,
-        :-ms-input-placeholder,
-        ::placeholder {
-            color: red;
-        }
     }
 
-    &.sign-up-form {
+    &.support-form {
 
         input:not([type="submit"]) {
-            width: calc(33% - 17px);
-            float: left;
+            width: 100%;
 
-            &:nth-of-type(n + 2) {
-                margin-left: 30px;
+            &.support-form__email,
+            &.support-form__issue {
+
+                @media only screen and (min-width: 768px) {
+                    width: calc(50% - 10px);
+
+                    @media only screen and (min-width: 980px) {
+                        width: calc(33% - 10px);
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 980px) {
+                width: calc(33% - 10px);
             }
         }
 
         textarea {
             width: 100%;
             min-height: 140px;
+        }
+
+        .text-right {
+            width: 100%;
+        }
+    }
+
+    &.sign-up-form {
+
+        input,
+        select {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            width: auto;
+        }
+        
+        .sign-up-form__sex,
+        .sign-up-form__age {
+            height: 60px;
+        }
+
+        .sign-up-form__sex,
+        .sign-up-form__age,
+        .sign-up-form__usage,
+        .sign-up-form__location {
+
+            @media only screen and (min-width: 768px) {
+                width: calc(50% - 10px);   
+            }
+        }
+
+        .sign-up-form__name,
+        .sign-up-form__sex,
+        .sign-up-form__age {
+
+            @media only screen and (min-width: 980px) {
+                width: calc(33% - 10px);
+            }
+        }
+
+        .text-right {
+            width: 100%;
         }
     }
 }
