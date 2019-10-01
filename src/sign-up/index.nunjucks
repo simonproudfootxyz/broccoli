@@ -10,7 +10,7 @@
 {% block content %}
 <p>We encourage open, honest and accessible information about cannabis!  As cannabis enthusiasts , we want to work with you as valued and ethical partners in the cannabis lifestyle.  In exchange for your experiences, we offer rewards, including cash, and other great options!</p>
 <p>By signing up for our newsletter, providing stories, or using our app in exchange for cash and other rewards, you gain access to exciting offers in our cannabis community including events, surveys and clinical trials.</p>
-<form id="sign-up-form" action="" class="sign-up-form">
+<form id="sign-up-form" action="https://formsubmit.co/simon.d.proudfoot@gmail.com" method="POST" class="sign-up-form">
 {# name 1/3  1/2 #}
   <input class="sign-up-form__name" type="text" name="name" placeholder="Name">
 {# sex 1/3  1/2 #}

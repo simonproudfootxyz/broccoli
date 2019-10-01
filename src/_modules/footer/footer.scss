@@ -71,9 +71,11 @@
 
         .app-callout {
             display: block;
+            max-width: 125px;
 
             @media only screen and (min-width: 768px) {
                 display: inline-block;
+                vertical-align: middle;
             }
 
             & + .app-callout {
