@@ -10,11 +10,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sample</title>
-    <meta name="description" content="A new Yeogurt application">
+    <title>Broccoli</title>
+    <meta name="description" content="Broccoli">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icon__broccoli.png">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/kif7ibz.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Serif+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
   </head>
@@ -28,46 +34,31 @@
 <header class="header">
   <div class="wrapper">
     <a class="header__home" href="">
-      <img class="header__logo" src="/images/nutri-step-logo@3x.png" alt="Nutristep">
+      <img class="header__logo" src="/images/logo--white.png" alt="Nutristep">
     </a>
     <div class="mobile-nav-trigger__container">
-      <a class="mobile-nav-trigger" href="#">Menu</a>
+      <a class="mobile-nav-trigger" href="#">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     
 <navigation class="navigation">
-  <a href="#" class="mobile-nav-trigger">Close</a>
+  <a href="#" class="mobile-nav-trigger">
+    <i class="fa fa-times"></i>
+  </a>
   <ul class="navigation__list">
   
     <li class="navigation__list-item">
-      
-      <a class="navigation__item active" href="/about" title="About">About</a>
-      
+      <a class="navigation__item navigation__item--FAQ" href="/frequently-asked-questions" title="FAQ">FAQ</a>
     </li>
   
     <li class="navigation__list-item">
-      
-      <a class="navigation__item" href="/parents" title="Parents">Parents</a>
-      
+      <a class="navigation__item navigation__item--Support" href="/support" title="Support">Support</a>
     </li>
   
-    <li class="navigation__list-item">
-      
-      <a class="navigation__item" href="/community" title="Community">Community</a>
-      
-    </li>
-  
-    <li class="navigation__list-item">
-      
-      <a class="navigation__item" href="/primary-care" title="Primary Care">Primary Care</a>
-      
-    </li>
-  
-    <li class="navigation__list-item">
-      
-      <a class="navigation__item" href="/research" title="Research">Research</a>
-      
-    </li>
-  
+  <li class="navigation__list-item">
+    <a href="https://apps.apple.com/us/app/msr/id1450536498" class="navigation__item button">Get the app</a>
+  </li>
   </ul>
 </navigation>
   </div>
@@ -78,107 +69,91 @@
     
   
     <div class="hero hero-home">
-        <h1 class="hero__title">Welcome to NutriSTEP<sup>&reg;</sup></h1>
-    </div>
-    <div class="wrapper">
-      <p class="hero-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni optio explicabo illo, iure, eius beatae minus temporibus odio incidunt obcaecati omnis maiores, alias ab autem similique vitae dignissimos esse. <a href="#">Learn more</a></p>
+      <div class="wrapper">
+        <div class="hero__content">
+          <h1 class="hero__title">Yes, it's a code word</h1>
+          <p class="hero__description">We want you to tell us about your experience with broccoli.  By signing up, you can get cash rewards for answering surveys about broccoli, and sharing your experiences, ideas and suggestions.</p>
+          <p><a href="#" class="button button--sandy">Get the app</a></p>
+        </div>
+      </div>
     </div>
     
 
 
+    <div class="wrapper home-wrapper">
+      
+  <section class="explanations">
     
-  <section class="home-nav-callouts content-wrapper">
-    <div class="wrapper">
-      <h2 class="nav-callouts__title">
-        <img src="./images/bear-icon.png" alt="">
-        <span class="title-text">What can this bear do for you?</span>
-      </h2>
-      
-<div class="nav-callout">
-  <img class="nav-callout__image" src="./images/for-parents.jpg" alt="For Parents">
-  <h3 class="nav-callout__title">For Parents</h3>
-  <p class="nav-callout__description">Complete online nutrition questionnaires and get immediate feedback. <a class="nav-callout__link" href="#">Learn more</a></p>
+<div class="explanation clearfix">
+  
+    <img class="explanation__image" src="./images/image__mockup.png">
+    
+  <div class="explanation__content">
+    <p class="explanation__step">About the app</p>
+    <p class="explanation__heading">Try Broccoli, Get Paid</p>
+    <p class="explanation__copy">That’s right, broccoli is green, and so is cash. You fill out surveys, get cash rewards.  No tricks, no gimmicks.  Your experience has value; we recognize and reward that.</p>
+    
+      <p><a href="#" class="button button--black-text">Get the app</a></p>
+    
+  </div>
 </div>
 
-      
-<div class="nav-callout">
-  <img class="nav-callout__image" src="./images/for-community-providers.jpg" alt="For Community Providers">
-  <h3 class="nav-callout__title">For Community Providers</h3>
-  <p class="nav-callout__description">Organize community agency activities for nutrition risk screening. <a class="nav-callout__link" href="#">Learn more</a></p>
+    
+<div class="explanation --right clearfix">
+  
+    <img class="explanation__image" src="./images/image__mockup2.png">
+    
+  <div class="explanation__content">
+    <p class="explanation__step">How it works</p>
+    <p class="explanation__heading">The Science of Broccoli</p>
+    <p class="explanation__copy">Our studies consist of your experiences. From surveys to virtual clinical trials, we compensate you for your time and experience.  Whether you’re a weekend enthusiast, a lifestyle connoisseur, or just a casual user, we have surveys and trials available for you.  You can participate in as many, or as few, as you wish and get paid for any participation.</p>
+    
+  </div>
 </div>
 
-      
-<div class="nav-callout">
-  <img class="nav-callout__image" src="./images/for-primary-care-providers.jpg" alt="For Primary Care Providers">
-  <h3 class="nav-callout__title">For Primary Care Providers</h3>
-  <p class="nav-callout__description">Supporting your clients with young children to identify potential nutrition risks with screening questionnaires. <a class="nav-callout__link" href="#">Learn more</a></p>
+    
+<div class="explanation clearfix">
+  
+    <img class="explanation__image" src="./images/image__cannabis.png">
+    
+  <div class="explanation__content">
+    <p class="explanation__step">Our mission</p>
+    <p class="explanation__heading">Steamed? No <br>Baked? Yes</p>
+    <p class="explanation__copy">There is a vast cultural history that has flourished underground. The more knowledge we collect, the better we can educate others.  Our goal is to use the research gathered from our studies to better inform the healthcare community, and to give a voice to consumers.</p>
+    
+  </div>
 </div>
 
-    </div>
   </section>
 
-  <section class="questionnaires">
-    <div class="wrapper">
-      <h3 class="questionnaires__title">Free access to questionnaires.</h3>
-      <p class="questionnaires__description">Please select the questionnaire that best fits you.</p>
-      
-<div class="questionnaire__card">
-  <img class="card__image" src="./images/nutri-e-step-logo.png">
-  <p class="card__description">Learn how to acquire a free license for the paper-based NutriSTEP<sup>&reg;</sup> questionnaires that you can use in your practice.</p>
-  <p class="card__description"><a class="card__link" href="#">Get Started</a></p>
-</div>
-
-      
-<div class="questionnaire__card nutri-estep">
-  <img class="card__image" src="./images/nutri-step-logo.png">
-  <p class="card__description">Access toddler and preschooler questionnaires online at www.nutritionscreen.ca.</p>
-  <p class="card__description"><a class="card__link" href="#">Get Started</a></p>
-</div>
-
     </div>
-  </section>
-
 
     
 <footer class="footer">
   <div class="wrapper">
-    <p class="footer__company">Nutristep<sup>&reg;</sup></p>
+    <div class="footer__logo-container">
+      <a href="#">
+        <img class="footer__logo" src="/images/icon__broccoli.png" alt="Broccoli">
+      </a>
+    </div>
     <ul class="footer-links footer-nav">
+      <li class="footer-nav__list-item">
+        <a href="" class="footer-nav__item">Home</a>
+      </li>
     
       <li class="footer-nav__list-item">
-        <a class="footer-nav__item" href="/about" title="About">About</a>
+        <a class="footer-nav__item" href="/frequently-asked-questions" title="FAQ">FAQ</a>
       </li>
       
       <li class="footer-nav__list-item">
-        <a class="footer-nav__item" href="/parents" title="Parents">Parents</a>
-      </li>
-      
-      <li class="footer-nav__list-item">
-        <a class="footer-nav__item" href="/community" title="Community">Community</a>
-      </li>
-      
-      <li class="footer-nav__list-item">
-        <a class="footer-nav__item" href="/primary-care" title="Primary Care">Primary Care</a>
-      </li>
-      
-      <li class="footer-nav__list-item">
-        <a class="footer-nav__item" href="/research" title="Research">Research</a>
+        <a class="footer-nav__item" href="/support" title="Support">Support</a>
       </li>
       
     </ul>
-    <ul class="footer-links legal-nav">
-      <li class="legal-nav__list-item">
-        <a href="/terms-of-use" class="legal-nav__item">Terms of Use</a>
-      </li>
-      <li class="legal-nav__list-item">
-        <a href="/privacy-policy" class="legal-nav__item">Privacy Policy</a>
-        </li>
-    </ul>
-    <div class="footer-disclaimer">
-      <p>Copyright © 2018 <a href="#">Dietitians of Canada</a>. All rights reserved.</p>
-      <p>Preschool NutriSTEP® questionnaire is the copyright © of Public Health Sudbury & Districts, Janis Randall Simpson and Heather Keller. </p>
-      <p>Toddler NutriSTEP® questionnaire is the copyright © of Janis Randall Simpson, Lee Rysdale and Heather Keller. </p>
-      <p>The NutriSTEP® mark and Bear Logo are owned by Public Health Sudbury & Districts (Ontario).</p>
+    <div class="footer__app-callouts">
+      <a href="https://apps.apple.com/us/app/msr/id1450536498" class="app-callout">
+        <img src="/images/app-store-badge.png" alt="">
+      </a>
     </div>
   </div>
 </footer>
