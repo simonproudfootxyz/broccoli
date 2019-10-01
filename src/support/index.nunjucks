@@ -10,7 +10,7 @@
 {% block content %}
 <p>We’re here to help.</p>
 <p>For any questions or issues please contact us directly.</p>
-<form id="support-form" action="https://formsubmit.co/simon.d.proudfoot@gmail.com" method="POST" class="support-form">
+<form id="support-form" action="https://formsubmit.co/dev@audaciabio.com" method="POST" class="support-form">
   <input class="support-form__name" type="text" name="name" placeholder="Name">
   <input class="support-form__email" type="email" name="email" placeholder="Email">
   <input class="support-form__issue" type="text" name="issue" placeholder="Issue">
