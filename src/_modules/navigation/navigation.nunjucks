@@ -18,7 +18,7 @@
     </li>
   {% endfor %}
   <li class="navigation__list-item">
-    <a href="#" class="navigation__item button">Get the app</a>
+    <a href="https://apps.apple.com/us/app/msr/id1450536498" class="navigation__item button">Get the app</a>
   </li>
   </ul>
 </navigation>

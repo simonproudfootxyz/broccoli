@@ -25,10 +25,7 @@
       {% endfor %}
     </ul>
     <div class="footer__app-callouts">
-      <a href="#" class="app-callout">
-        <img src="{{baseUrl}}/images/google-play-badge.png" alt="">
-      </a>
-      <a href="#" class="app-callout">
+      <a href="https://apps.apple.com/us/app/msr/id1450536498" class="app-callout">
         <img src="{{baseUrl}}/images/app-store-badge.png" alt="">
       </a>
     </div>
