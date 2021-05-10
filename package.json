@@ -12,7 +12,7 @@
     "babel-preset-es2015": "~6.22.0",
     "babel-plugin-add-module-exports": "~0.2.1",
     "babel-eslint": "~7.1.1",
-    "lodash": "~4.17.4",
+    "lodash": "~4.17.21",
     "foldero": "~0.1.1",
     "minimist": "~1.2.0",
     "rimraf": "~2.6.1",
